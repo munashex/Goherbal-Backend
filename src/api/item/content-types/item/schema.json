@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "singularName": "item",
+    "pluralName": "items",
+    "displayName": "Item"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "string"
+    },
+    "longDescription": {
+      "type": "blocks"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Echinacea",
+        "Joint and Muscle Support",
+        "Digestive Health",
+        "Immune Boosters",
+        "Anti-inflammatory and Antioxidants",
+        "Women's Health",
+        "Blood Purification and Cleansing",
+        "Seeds",
+        "Miscellaneous",
+        "Unknown Category",
+        "Eye Health Supplements"
+      ]
+    }
+  }
+}
